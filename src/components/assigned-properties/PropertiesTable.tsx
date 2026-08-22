@@ -17,7 +17,6 @@ import { fmtMoney, fmtPct } from "@/lib/format";
 import { ActionsMenu } from "./ActionsMenu";
 
 const dropdownItems = [
-  { label: "Update Status", icon: CircleCheck },
   { label: "Create Receipt", icon: FilePlus },
   { label: "View Sell", icon: FileText },
   { label: "View History", icon: History },
@@ -141,8 +140,8 @@ export function PropertiesTable({
               dir={sortDir}
               onSort={onSort}
             />
-            <th className="sticky top-0 z-10 border-b border-border bg-[#F6F8FB] px-[14px] py-[11px] text-left align-middle">
-              <span className="text-[14px] font-bold tracking-[0.24px] text-ink-soft">
+            <th className="w-[230px] sticky top-0 z-10 border-b border-border bg-[#F6F8FB] px-[14px] py-[11px] text-center align-middle before:absolute before:inset-x-0 before:top-0 before:h-[1px] before:bg-border">
+              <span className="flex justify-center text-[14px] font-bold tracking-[0.24px] text-ink-soft">
                 Actions
               </span>
             </th>
@@ -237,10 +236,23 @@ export function PropertiesTable({
                   <div className="flex items-center gap-2">
                     <button
                       type="button"
-                      aria-label="Call"
-                      className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-[5px] border border-border bg-white text-ink-muted transition-colors hover:border-accent-border hover:bg-accent-soft hover:text-accent"
+                      className="group flex h-[35px] w-[74px] cursor-pointer items-center justify-center gap-[7px] rounded-[6px] border border-border-soft bg-white font-body text-[13px] font-semibold whitespace-nowrap text-ink-soft transition-colors hover:border-accent-border hover:text-accent"
                     >
-                      <Phone className="h-4 w-4" strokeWidth={1.5} />
+                      <Phone
+                        className="h-4 w-4 flex-none text-ink-muted transition-colors group-hover:text-accent"
+                        strokeWidth={1.5}
+                      />
+                      Call
+                    </button>
+                    <button
+                      type="button"
+                      className="group flex h-[35px] w-[74px] cursor-pointer items-center justify-center gap-[7px] rounded-[6px] border border-border-soft bg-white font-body text-[13px] font-semibold whitespace-nowrap text-ink-soft transition-colors hover:border-accent-border hover:text-accent"
+                    >
+                      <CircleCheck
+                        className="h-4 w-4 flex-none text-ink-muted transition-colors group-hover:text-accent"
+                        strokeWidth={1.5}
+                      />
+                      Update
                     </button>
                     <ActionsMenu
                       variant="icon"

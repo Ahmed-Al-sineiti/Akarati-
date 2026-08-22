@@ -142,7 +142,6 @@ export function AssignedPropertiesScreen() {
                   property={p}
                   menuOpen={openMenuId === p.id}
                   onToggleMenu={() => toggleMenu(p.id)}
-                  flipUp={i >= sorted.length - 2 && sorted.length > 2}
                 />
               ))}
             </div>

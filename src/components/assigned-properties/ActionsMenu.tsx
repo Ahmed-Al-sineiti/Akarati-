@@ -26,12 +26,12 @@ export function ActionsMenu({
           aria-label="Row actions"
           aria-expanded={open}
           onClick={onToggle}
-          className={
-            "flex h-7 w-7 cursor-pointer items-center justify-center rounded-[5px] border transition-colors " +
-            (open
-              ? "border-accent-border bg-accent-soft text-accent"
-              : "border-border bg-white text-ink-muted hover:border-accent-border hover:bg-accent-soft hover:text-accent")
-          }
+            className={
+              "flex h-[35px] w-[35px] cursor-pointer items-center justify-center rounded-[5px] border transition-colors " +
+              (open
+                ? "border-accent-border bg-accent-soft text-accent"
+                : "border-border bg-white text-ink-muted hover:border-accent-border hover:bg-accent-soft hover:text-accent")
+            }
         >
           <MoreVertical className="h-4 w-4" strokeWidth={1.5} />
         </button>
@@ -62,7 +62,7 @@ export function ActionsMenu({
               key={label}
               className="flex cursor-pointer items-center gap-[9px] px-3 py-[7px] text-[13px] text-ink-soft hover:bg-page"
             >
-              <Icon className="h-4 w-4 text-accent" strokeWidth={1.5} />
+              <Icon className="h-4 w-4 text-ink-muted" strokeWidth={1.5} />
               {label}
             </span>
           ))}
