@@ -7,30 +7,10 @@ import { fmtMoney, fmtPct } from "@/lib/format";
 import { ActionsMenu } from "./ActionsMenu";
 
 const quickActions = [
-  {
-    label: "Call",
-    icon: Phone,
-    hoverClass: "hover:bg-green/10 hover:border-green/30 hover:text-green-strong",
-    iconHover: "group-hover:text-green-strong",
-  },
-  {
-    label: "Update Status",
-    icon: CircleCheck,
-    hoverClass: "hover:bg-accent-soft hover:border-accent-border hover:text-accent",
-    iconHover: "group-hover:text-accent",
-  },
-  {
-    label: "Create Receipt",
-    icon: FilePlus,
-    hoverClass: "hover:bg-purple-50 hover:border-purple-200 hover:text-purple-600",
-    iconHover: "group-hover:text-purple-600",
-  },
-  {
-    label: "View Sell",
-    icon: FileText,
-    hoverClass: "hover:bg-amber-50 hover:border-amber-200 hover:text-amber-600",
-    iconHover: "group-hover:text-amber-600",
-  },
+  { label: "Call", icon: Phone },
+  { label: "Update Status", icon: CircleCheck },
+  { label: "Create Receipt", icon: FilePlus },
+  { label: "View Sell", icon: FileText },
 ];
 
 const moreItems = [
@@ -144,14 +124,14 @@ export function PropertyCard({
       </div>
 
       <div className="flex w-[150px] flex-none flex-col gap-2">
-        {quickActions.map(({ label, icon: Icon, hoverClass, iconHover }) => (
+        {quickActions.map(({ label, icon: Icon }) => (
           <button
             key={label}
             type="button"
-            className={`group flex cursor-pointer items-center gap-[7px] rounded-[6px] border border-border-soft bg-white px-[10px] py-[9px] font-body text-[13px] font-semibold whitespace-nowrap text-ink-soft transition-colors ${hoverClass}`}
+            className="group flex cursor-pointer items-center gap-[7px] rounded-[6px] border border-border-soft bg-white px-[10px] py-[9px] font-body text-[13px] font-semibold whitespace-nowrap text-ink-soft transition-colors hover:border-accent-border hover:text-accent"
           >
             <Icon
-              className={`h-4 w-4 flex-none text-ink-muted transition-colors ${iconHover}`}
+              className="h-4 w-4 flex-none text-ink-muted transition-colors group-hover:text-accent"
               strokeWidth={1.5}
             />
             {label}

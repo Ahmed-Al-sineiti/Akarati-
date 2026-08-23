@@ -87,10 +87,10 @@ export function AssignedPropertiesScreen() {
   }
 
   return (
-    <div className="flex h-screen w-full overflow-hidden bg-page font-body text-ink">
+    <div className="flex h-screen w-full overflow-x-auto overflow-y-hidden bg-page font-body text-ink">
       <Sidebar />
 
-      <main className="flex min-w-0 flex-1 flex-col overflow-hidden">
+      <main className="flex flex-1 flex-col">
         {/* Fixed shell: never scrolls away — nav, filters, title and refresh
             all stay reachable without hunting for them mid-list. */}
         <div className="flex-none">

@@ -29,9 +29,10 @@ export const screens: ScreenEntry[] = [
     id: "sell-details",
     title: "Sell Details",
     category: "Sales",
-    date: "2026-08-18",
+    date: "2026-08-23",
     route: "/sell-details",
-    status: "coming-soon",
-    description: "Sale record breakdown: buyer, unit, payment schedule and documents.",
+    status: "available",
+    thumbnail: "/thumbnails/sell-details.png",
+    description: "Sale record breakdown: workflow status, ePMS data and full sell terms.",
   },
 ];

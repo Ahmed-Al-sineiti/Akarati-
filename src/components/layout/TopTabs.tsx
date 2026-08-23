@@ -24,7 +24,7 @@ export function TopTabs() {
         >
           {label}
           {badge !== undefined && (
-            <span className="rounded-full bg-red px-[7px] py-[2px] text-[11px] font-semibold text-white">
+            <span className="flex h-[22px] w-[22px] items-center justify-center rounded-full bg-red text-[11px] font-semibold text-white">
               {badge}
             </span>
           )}

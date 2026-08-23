@@ -2,6 +2,7 @@ import {
   Menu,
   LogOut,
   ChevronRight,
+  ChevronUp,
   Network,
   Users,
   UsersRound,
@@ -73,17 +74,11 @@ export function Sidebar() {
         </span>
       </div>
 
-      <div className="flex items-center gap-4 border-b border-border-faint px-[18px] pb-[18px]">
-        <span className="flex cursor-pointer items-center gap-[7px] text-[13px] text-ink-soft transition-colors hover:text-accent">
-          <LogOut className="h-[17px] w-[17px] text-ink-muted" strokeWidth={1.5} />
-          Logout
-        </span>
-      </div>
-
       <div className="flex items-center justify-between px-[18px] pt-4 pb-2">
         <span className="text-[11.5px] font-semibold tracking-[0.13em] text-accent uppercase">
           Quick access
         </span>
+        <ChevronUp className="h-[17px] w-[17px] text-accent" strokeWidth={1.5} />
       </div>
 
       <nav className="flex flex-1 flex-col overflow-y-auto">
@@ -120,6 +115,13 @@ export function Sidebar() {
           </span>
         ))}
       </nav>
+
+      <div className="flex items-center gap-4 border-t border-border-faint px-[18px] pt-[18px]">
+        <span className="flex cursor-pointer items-center gap-[7px] text-[13px] text-ink-soft transition-colors hover:text-accent">
+          <LogOut className="h-[17px] w-[17px] text-ink-muted" strokeWidth={1.5} />
+          Logout
+        </span>
+      </div>
 
       <div className="px-[18px] pt-6 text-[11.5px] leading-relaxed text-faint">
         © Everrox Technologies LLC
