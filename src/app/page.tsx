@@ -1,5 +1,5 @@
-import { AssignedPropertiesScreen } from "@/components/assigned-properties/AssignedPropertiesScreen";
+import { DesignReviewHub } from "@/components/hub/DesignReviewHub";
 
 export default function Page() {
-  return <AssignedPropertiesScreen />;
+  return <DesignReviewHub />;
 }

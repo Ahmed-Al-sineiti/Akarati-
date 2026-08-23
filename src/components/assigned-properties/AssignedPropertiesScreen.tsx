@@ -136,7 +136,7 @@ export function AssignedPropertiesScreen() {
             </div>
           ) : viewMode === "card" ? (
             <div className="flex flex-col gap-4">
-              {sorted.map((p, i) => (
+              {sorted.map((p) => (
                 <PropertyCard
                   key={p.id}
                   property={p}

@@ -15,8 +15,11 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "Akarati — Assigned Properties",
-  description: "Akarati Collections — Assigned Properties proposal screen",
+  title: {
+    default: "Design Review — Akarati",
+    template: "%s",
+  },
+  description: "Akarati redesign archive — browse and open interactive screen prototypes.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

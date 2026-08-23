@@ -32,6 +32,21 @@
 
   --color-hover: #f4f7fb;
   --color-row-hover: #fafcff;
+
+  /* Design Review Hub — a separate identity, deliberately distinct from
+     the Akarati prototype tokens above. */
+  --color-hub-bg: #f5f6fa;
+  --color-hub-surface: #ffffff;
+  --color-hub-border: #e5e7eb;
+  --color-hub-border-soft: #eef0f5;
+  --color-hub-ink: #111827;
+  --color-hub-ink-soft: #374151;
+  --color-hub-muted: #6b7280;
+  --color-hub-faint: #9ca3af;
+  --color-hub-accent: #2563eb;
+  --color-hub-accent-soft: #eff6ff;
+  --color-hub-available: #16a34a;
+  --color-hub-skeleton: #e5e7eb;
 }
 
 body {
