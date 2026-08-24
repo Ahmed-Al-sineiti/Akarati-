@@ -43,7 +43,7 @@ export function SellDetailsScreen() {
                     type="button"
                     className="flex h-9 cursor-pointer items-center gap-2 rounded-[6px] bg-accent px-[18px] font-body text-[13px] font-semibold text-white transition-colors hover:bg-accent-hover"
                   >
-                    <BadgeCheck className="h-4 w-4" strokeWidth={1.4} />
+                    <BadgeCheck className="h-4 w-4" strokeWidth={2} />
                     Approve
                   </button>
                   <button
