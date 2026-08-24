@@ -29,8 +29,8 @@ export function ActionsMenu({
             className={
               "flex h-[35px] w-[35px] cursor-pointer items-center justify-center rounded-[5px] border transition-colors " +
               (open
-                ? "border-accent-border bg-accent-soft text-accent"
-                : "border-border bg-white text-ink-muted hover:border-accent-border hover:bg-accent-soft hover:text-accent")
+                ? "border-accent-border bg-hover text-ink-muted"
+                : "border-border bg-white text-ink-muted hover:bg-hover")
             }
         >
           <MoreVertical className="h-4 w-4" strokeWidth={1.4} />

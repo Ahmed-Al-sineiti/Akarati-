@@ -22,7 +22,7 @@ export function ViewSwitch({
           (value === "card" ? "bg-accent-toggle text-accent" : "text-faint hover:bg-hover hover:text-ink-muted")
         }
       >
-        <LayoutGrid className="h-[17px] w-[17px]" strokeWidth={1.5} />
+        <LayoutGrid className="h-[17px] w-[17px]" strokeWidth={1.4} />
       </button>
       <button
         type="button"
@@ -34,7 +34,7 @@ export function ViewSwitch({
           (value === "table" ? "bg-accent-toggle text-accent" : "text-faint hover:bg-hover hover:text-ink-muted")
         }
       >
-        <List className="h-[17px] w-[17px]" strokeWidth={1.5} />
+        <List className="h-[17px] w-[17px]" strokeWidth={1.4} />
       </button>
     </span>
   );

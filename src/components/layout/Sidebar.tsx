@@ -117,8 +117,8 @@ export function Sidebar() {
       </nav>
 
       <div className="flex items-center gap-4 border-t border-border-faint px-[18px] pt-[18px]">
-        <span className="flex cursor-pointer items-center gap-[7px] text-[13px] text-ink-soft transition-colors hover:text-accent">
-          <LogOut className="h-[17px] w-[17px] text-ink-muted" strokeWidth={1.5} />
+        <span className="flex cursor-pointer items-center gap-[7px] text-[13px] text-ink-soft transition-colors hover:text-ink">
+          <LogOut className="h-[17px] w-[17px] text-ink-muted" strokeWidth={1.4} />
           Logout
         </span>
       </div>

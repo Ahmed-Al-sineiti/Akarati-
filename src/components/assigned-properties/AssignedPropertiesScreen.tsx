@@ -118,7 +118,7 @@ export function AssignedPropertiesScreen() {
                   onClick={() => setFilters({ ...defaultFilters, officer: "Altahir Abdulrahman Mahmoud Khalifa" })}
                   className="flex cursor-pointer items-center gap-2 rounded-[6px] border border-border-soft bg-white px-[14px] py-2 font-body text-[13px] font-semibold text-ink-soft transition-colors hover:bg-hover"
                 >
-                  <RefreshCw className="h-4 w-4" strokeWidth={1.5} />
+                  <RefreshCw className="h-4 w-4" strokeWidth={1.4} />
                   Refresh
                 </button>
                 <ViewSwitch value={viewMode} onChange={setViewMode} />

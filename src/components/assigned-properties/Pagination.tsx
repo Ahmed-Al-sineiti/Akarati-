@@ -22,7 +22,7 @@ export function Pagination({
           type="button"
           className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-[5px] border border-border-soft bg-white text-faint transition-colors hover:bg-hover"
         >
-          <ChevronLeft className="h-4 w-4" strokeWidth={1.5} />
+          <ChevronLeft className="h-4 w-4" strokeWidth={1.4} />
         </button>
         {pages.map((n) => (
           <button
@@ -51,12 +51,12 @@ export function Pagination({
           type="button"
           className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-[5px] border border-border-soft bg-white text-ink-muted transition-colors hover:bg-hover"
         >
-          <ChevronRight className="h-4 w-4" strokeWidth={1.5} />
+          <ChevronRight className="h-4 w-4" strokeWidth={1.4} />
         </button>
       </span>
       <span className="flex cursor-pointer items-center gap-2 rounded-[5px] border border-border-soft bg-white px-[10px] py-[6px] text-[12.5px] text-ink transition-colors hover:bg-hover">
         {pageSize} per page
-        <ChevronDown className="h-4 w-4 text-ink-muted" strokeWidth={1.5} />
+        <ChevronDown className="h-4 w-4 text-ink-muted" strokeWidth={1.4} />
       </span>
     </div>
   );

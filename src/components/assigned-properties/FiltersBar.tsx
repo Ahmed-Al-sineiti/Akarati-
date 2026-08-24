@@ -63,7 +63,7 @@ function SelectField({
         {clearable && (
           <X
             className="h-4 w-4 flex-none text-faint transition-colors hover:text-ink-muted"
-            strokeWidth={1.5}
+            strokeWidth={1.4}
             onClick={(e) => {
               e.stopPropagation();
               setOpen(false);
@@ -75,7 +75,7 @@ function SelectField({
           className={
             "h-4 w-4 flex-none text-ink-muted transition-transform " + (open ? "rotate-180" : "")
           }
-          strokeWidth={1.5}
+          strokeWidth={1.4}
         />
       </button>
 
@@ -152,9 +152,9 @@ export function FiltersBar({
         </span>
         <button
           type="button"
-          className="flex cursor-pointer items-center gap-2 rounded-[6px] border border-border-soft bg-white px-5 py-[9px] font-body text-[13px] font-semibold text-ink-soft transition-colors hover:border-accent-border hover:text-accent"
+          className="flex cursor-pointer items-center gap-2 rounded-[6px] border border-border-soft bg-white px-5 py-[9px] font-body text-[13px] font-semibold text-ink-soft transition-colors hover:bg-hover"
         >
-          <Search className="h-4 w-4" strokeWidth={1.5} />
+          <Search className="h-4 w-4" strokeWidth={1.4} />
           Search
         </button>
       </div>

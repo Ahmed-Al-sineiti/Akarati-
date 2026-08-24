@@ -66,7 +66,7 @@ function SortableHeader({
         }
       >
         {label}
-        <Icon className="h-[13px] w-[13px]" strokeWidth={1.5} />
+        <Icon className="h-[13px] w-[13px]" strokeWidth={1.4} />
       </span>
       <span className="block text-[10px] font-medium text-faint">{unit}</span>
     </th>
