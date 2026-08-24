@@ -236,22 +236,16 @@ export function PropertiesTable({
                   <div className="flex items-center gap-2">
                     <button
                       type="button"
-                      className="group flex h-[35px] w-[74px] cursor-pointer items-center justify-center gap-[7px] rounded-[6px] border border-border-soft bg-white font-body text-[13px] font-semibold whitespace-nowrap text-ink-soft transition-colors hover:border-accent-border hover:text-accent"
+                      className="flex h-[35px] w-[74px] cursor-pointer items-center justify-center gap-[7px] rounded-[6px] border border-border-soft bg-white font-body text-[13px] font-medium whitespace-nowrap text-ink-soft transition-colors hover:bg-hover"
                     >
-                      <Phone
-                        className="h-4 w-4 flex-none text-ink-muted transition-colors group-hover:text-accent"
-                        strokeWidth={1.5}
-                      />
+                      <Phone className="h-4 w-4 flex-none text-ink-muted" strokeWidth={1.4} />
                       Call
                     </button>
                     <button
                       type="button"
-                      className="group flex h-[35px] w-[74px] cursor-pointer items-center justify-center gap-[7px] rounded-[6px] border border-border-soft bg-white font-body text-[13px] font-semibold whitespace-nowrap text-ink-soft transition-colors hover:border-accent-border hover:text-accent"
+                      className="flex h-[35px] w-[74px] cursor-pointer items-center justify-center gap-[7px] rounded-[6px] border border-border-soft bg-white font-body text-[13px] font-medium whitespace-nowrap text-ink-soft transition-colors hover:bg-hover"
                     >
-                      <CircleCheck
-                        className="h-4 w-4 flex-none text-ink-muted transition-colors group-hover:text-accent"
-                        strokeWidth={1.5}
-                      />
+                      <CircleCheck className="h-4 w-4 flex-none text-ink-muted" strokeWidth={1.4} />
                       Update
                     </button>
                     <ActionsMenu

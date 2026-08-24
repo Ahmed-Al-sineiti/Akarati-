@@ -128,12 +128,9 @@ export function PropertyCard({
           <button
             key={label}
             type="button"
-            className="group flex cursor-pointer items-center gap-[7px] rounded-[6px] border border-border-soft bg-white px-[10px] py-[9px] font-body text-[13px] font-semibold whitespace-nowrap text-ink-soft transition-colors hover:border-accent-border hover:text-accent"
+            className="flex cursor-pointer items-center gap-[7px] rounded-[6px] border border-border-soft bg-white px-[10px] py-[9px] font-body text-[13px] font-medium whitespace-nowrap text-ink-soft transition-colors hover:bg-hover"
           >
-            <Icon
-              className="h-4 w-4 flex-none text-ink-muted transition-colors group-hover:text-accent"
-              strokeWidth={1.5}
-            />
+            <Icon className="h-4 w-4 flex-none text-ink-muted" strokeWidth={1.4} />
             {label}
           </button>
         ))}
